@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.right-side {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card-name-number-cvc {
+  position: relative;
+  left: 5%;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-name,
+.card-number {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.card-number {
+  margin-top: -10rem;
+}
+.card-date-cvc {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -10rem;
+}
+input {
+  border: 1px solid rgb(241, 233, 233);
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  font-size: 0.5rem;
+  width: 80%;
+  height: 2.5rem;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 14px; /* İstediğiniz boyut */
+}
+
+input:-moz-placeholder {
+  font-size: 14px;
+}
+
+input::-moz-placeholder {
+  font-size: 14px;
+}
+
+input:-ms-input-placeholder {
+  font-size: 14px;
+}
+.left-side {
+  width: 30%;
+  height: 100%;
+  background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-label {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  right: 42px;
+}
+.card-input {
+  display: flex;
+}
+.card-input {
+}
+.front-card {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 450px;
+  height: 250px;
+  background-image: url(./images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.3rem;
+  color: rgb(233, 225, 225);
+  font-weight: 100;
+}
+.month-year-side {
+  display: flex;
+  position: absolute;
+  top: 17rem;
+  left: 26rem;
+  color: white;
+}
+
+.card-input input[type="number"] {
+  width: 200px;
+}
+
+.back-card {
+  color: white;
+  position: absolute;
+  top: 55%;
+  background-image: url(./images/bg-card-back.png);
+  left: 15%;
+  width: 450px;
+  height: 250px;
+  border-radius: 0.3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.confirm-page {
+  display: none;
+}
+#confirm-button {
+  width: 80%;
+  margin-top: 2rem;
+  background-color: rgb(33, 9, 47);
+  color: white;
+  font-size: 0.4rem;
+  border-radius: 0.5rem;
+  height: 70%;
+  font-size: 1rem;
+}
+
+#month,
+#year {
+  width: 20%;
+}
+#cvc {
+  width: 33%;
+  margin-left: 35px;
+}
+label {
+  font-size: 1.2rem;
+}
+#font-card-number {
+  position: relative;
+  top: 90px;
+  left: 30px;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+}
+#font-card-card-number span {
+}
+#front-card-date {
+  position: relative;
+  top: 90px;
+  left: 80%;
+}
+#front-card-name {
+  position: relative;
+  top: 70%;
+  left: 10%;
+  font-size: 0.7rem;
+}
+#front-card-icon {
+  height: 100px;
+  width: 50px;
+  background-color: red;
+  background-image: url(/images/card-logo.svg);
+}
+#back-card-text {
+  position: relative;
+  top: 44%;
+  left: 78%;
+  font-size: 0.8rem;
+}
